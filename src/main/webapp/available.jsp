@@ -16,7 +16,7 @@
 <br/>
 <br/>
 <%
-if(request.getSession().getAttribute("user_id")!=null){
+if(request.getAttribute("user_id")!=null){
 %>
 <div class="a">
 <table>

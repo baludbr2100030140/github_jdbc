@@ -11,7 +11,7 @@
 <jsp:include page="navbar.jsp" />
 <br/>
 <%
-if(request.getSession().getAttribute("user_id")!=null){
+if(request.getAttribute("user_id")!=null){
 %>
 <div class="form-container">
     <h2>Enter Your Details</h2>

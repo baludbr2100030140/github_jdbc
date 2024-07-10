@@ -23,22 +23,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-<%String s =(String)request.getSession().getAttribute("role");	 
-if(s.equals("user")){
+<%String s =(String)request.getAttribute("role");	 
+if(s!=null && s.equals("user")){
 %>
                 <a class="nav-link" href="donate.jsp" id="navItem2">Donate</a>
                 <a class="nav-link" href="reciever.jsp" id="navItem3">Patient Registration</a> 
                 <a class="nav-link" href="Available" id="navItem3">Donors</a>       
                  <a class="nav-link" href="Nearby" id="navItem3">Nearby Hospitals</a><%} %>  
- <%String k =(String)request.getSession().getAttribute("role");	 
-if(k.equals("Hospital")){
+ <%String k =(String)request.getAttribute("role");	 
+if(k!=null && k.equals("Hospital")){
 %>
    <a class="nav-link" href="hospital.jsp" id="navItem2">Hospital Registration Form</a>
           <a class="nav-link" href="Patientd" id="navItem2">Patients</a>
    
       <%} %>    
-      <%String l =(String)request.getSession().getAttribute("role");	 
-if(l.equals("Admin")){
+      <%String l =(String)request.getAttribute("role");	 
+if(l!=null && l.equals("Admin")){
 %>
    <a class="nav-link" href="Userd" id="navItem2">Users</a>
      <a class="nav-link" href="Available" id="navItem2">Donors</a>

@@ -10,7 +10,19 @@
 <jsp:include page="navbar.jsp" />
 <div class="background-container">
   <div class="welcome-message">
-        <h1>Welcome ,<%=(String)request.getSession().getAttribute("username")%></h1>
+         <%
+         String username = (String) request.getAttribute("username");
+
+        if (username != null) {
+    %>
+            <h1>Welcome, <%= username %></h1>
+    <%
+        } else {
+    %>
+            <h1>Welcome, Guest</h1>
+    <%
+        }
+    %>
     </div>
 </div>
 </body>

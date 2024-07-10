@@ -42,7 +42,7 @@
         <%} %>
     <div class="container">
         <h2>Login</h2>
-        <form action="Login" method="POST">
+        <form action="/login" method="POST">
             <label for="username">User name:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>

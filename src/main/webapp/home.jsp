@@ -71,15 +71,14 @@
 <section class="form-section" id="signup">
     <div class="container">
         <h2>Sign Up to Donate</h2>
-        <form action="Home" method="POST">
+        <form action="/register" method="POST">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
             <label for="username">User name:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <label for="conpassword">Confirm Password:</label>
-            <input type="password" id="conpassword" name="conpassword" required>
+            
               <label for="role">Select your Role:</label>
               <select id="role" name="role">
             <option value="user" required>User</option>
